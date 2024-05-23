@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dairy Harbor Web App</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .image{
+            height: 500px;
+            overflow: hidden;
+        }
+        .img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius:4px;
+            margin-bottom:16px;
+        }
+        .harbor{
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+            column-gap: 50px;
+        }
+        .image1{
+            overflow:hidden;
+            height:200px;
+            width:200px;
+        }
+        .logo{
+            height:100%;
+            width:100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .harbor{
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items:top;
+            column-gap: 20px;
+            z-index:100;
+        }
+        .image2{
+            z-index: 10000;
+            position:fixed;
+            display:inline-block;
+            height:200px;
+            width:200px;
+            overflow:hidden;
+            background-color: white;
+            border-bottom:12px solid rgb(22, 178, 230);
+            border-radius: 200px;
+        }
+        
+        .img1{
+            height:150px;
+            width:150px;
+            object-fit: cover;
+            border-style:none;
+            border-radius:100px;
+            margin-right:50px;
+        }
+        p{
+            color:rgb(0,0,0);
+            font-size:18px;
+        }
+        .btn::placeholder{
+            color:white;
+        }
+        .link{
+            background-color:rgb(39, 188, 238);
+            color:white;
+        }
+        .service1{
+            transition:color 0.4s,background-color 0.4s;
+        }
+        .service1:hover{
+            color:white;
+            background-color:rgb(65, 64, 64);
+        }
+        .img3{
+            filter:brightness(40%);
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/b1.jpg');
+            filter: brightness(50%);
+            z-index: -1; /* Ensure the overlay is behind the content */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    
+        <div class="image2">
+            <img src="img/logo.png" class="logo">
+        </div>        
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+            </a>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse" style="color:rgb(23, 180, 233);">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active" style="color:rgb(23, 180, 233);">Home</a>
+                    <a href="#About" class="nav-item nav-link" style="color:rgb(23, 180, 233);">About</a>
+                    <a href="#Services" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Services</a>
+                    <a href="#Team" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Our Team</a>
+                    
+                    </div>
+                </div>
+                <div class="border-start ps-4 d-none d-lg-block">
+                    
+                </div>
+        </nav>
+
+        
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  </div>
+                <div class="carousel-item active image">
+                    <img class="w-100 img" style="filter:brightness(40%)" src="img/carousel-11.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8 text-start">
+                                    <br><br><br><br><br>
+                                    <h3 class="display-1 text-white mb-5 animated slideInRight">Revolutionizing Dairy Management for a Sustainable Future.</h3>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="carousel-item image">
+                    <img class="w-100 img" src="img/carousel-22.jpg" style="filter:brightness(40%)" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-8 text-end">
+                                    <p class="fs-4 text-white">Welcome to Dairy Harbor</p>
+                                    <h4 class="display-1 text-white mb-5 animated slideInRight">Walking the milky way.</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="About">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                           <!-- <div class="about-experience rounded" style="background-color:rgb(10, 158, 207); color:black;">
+                                <h1 class="display-1 mb-0">1</h1>
+                                <small class="fs-5 fw-bold">Year Experience</small>
+                            </div>-->
+                            
+                        </div>
+                        
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/carousel-22.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/s2.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/s3.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/gallery-6.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="section-title bg-white text-start pe-3" style="color:rgb(20, 185, 240);">About Us</p>
+                    <h1 class="mb-4" style="color:rgb(20, 185, 240);">Know About Dairy Harbor</h1>
+                    <p class="mb-4">Dairy Harbor is a comprehensive dairy farm management app designed to streamline dairy farm operations and maximize productivity. With innovative features that cover every aspect of dairy farming, Dairy Delight empowers you to efficiently manage your herd, optimize breeding, and monitor production and sales</p>
+                    <div class="row g-5 pt-2 mb-5">
+                        <div class="col-sm-6">
+                            <div class="image1 mb-4">
+                                <img class="img-fluid mb-4 img" src="img/service1.png" alt="">
+                            </div>
+                            
+                            <h5 class="mb-3" style="color:rgb(20, 185, 240);">Comprehensive Data Capture
+                            </h5>
+                            <span style="color:rgb(0,0,0);">Record essential details such as serial number, name, date of birth, and parent information for each of your cattle.
+                            </span>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="image1 mb-4">
+                                <img class="img-fluid mb-4 img" src="img/product.jpg" alt="">
+                            </div>
+
+                                <h5 class="mb-3" style="color:rgb(20, 185, 240);">
+                            Herd Visualization</h5>
+                            <span style="color:rgb(0,0,0);">Visualize your herd with photos and other identifying details, providing a comprehensive overview of your cattle at a glance.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title bg-white text-start pe-3" style="color:rgb(20, 185, 240);">Why Me!</p>
+                    <h1 class="mb-4" style="color:rgb(20, 185, 240);">Reasons to have Harbor App!</h1>
+                    <p class="mb-4" style="color:rgb(0,0,0);">Our goal is to develop a dairy farm management app that offers a user-friendly interface and robust functionality, enabling farmers to efficiently oversee their operations, enhance productivity, and optimize profitability through streamlined livestock management, accurate production tracking, and sales monitoring.
+
+                    </p>
+                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3"></i>Streamlined Dairy Farm Management
+                    </p>
+                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3"></i>Herd Health Optimization
+                    </p>
+                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3"></i>Data-Driven Decision Making
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                           <!-- <div class="about-experience rounded" style="background-color:rgb(10, 158, 207); color:black;">
+                                <h1 class="display-1 mb-0">1</h1>
+                                <small class="fs-5 fw-bold">Year Experience</small>
+                            </div>-->
+                            
+                        </div>
+                        
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/gallery-5.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/img-1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/img-2.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/img-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" style="background-color:rgb(25, 107, 134);">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="img/banner-1.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="mb-3">Data-Driven Decision Making
+                            </h2>
+                            <p class="text-white mb-4">Dairy Delights provides comprehensive data and insights to help you make informed decisions that maximize milk yield and profitability.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="img/banner-2.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="mb-3">Production Monitoring
+                            </h2>
+                            <p class="text-white mb-4">The Production Monitoring module in Dairy Harbor empowers you to track and analyze your milk yield, enabling informed decisions to maximize productivity.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="Services">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center px-3" style="color:rgb(14, 181, 236);">Our Services</p>
+                <h1 class="mb-5" style="color:rgb(14, 181, 236);">Services That We Offer For Farmer</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100 service1">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="" style="color:black;">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3" style="color:rgb(14, 181, 236);">Artificial Insemination Management
+                            </h4>
+                            <p class="mb-4">Dairy Harbors' Artificial Insemination Management module helps you optimize your breeding efforts, ensuring efficient and successful artificial insemination procedures.
+                            </p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100 service1">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3" style="color:rgb(14, 181, 236);">Milk Distribution and Sales
+                            </h4>
+                            <p class="mb-4">Dairy Harbor' Milk Distribution and Sales module streamlines the management of your milk supply chain, ensuring efficient distribution and minimizing losses.
+
+                            </p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100 service1">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-3.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3" style="color:rgb(14, 181, 236);">Periodic Procedures Management
+                            </h4>
+                            <p class="mb-4">Dairy Harbors' Periodic Procedures Management module helps you stay on top of essential health maintenance practices, ensuring the optimal well-being of your cattle.
+
+                            </p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100 service1">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-4.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3" style="color:rgb(14, 181, 236);">Cattle Registration Module
+                            </h4>
+                            <p class="mb-4">The Cattle Registration Module in Dairy Harbor streamlines the process of managing your herd, allowing you to efficiently organize and update cattle information.
+
+                            </p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100 service1">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-5.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3" style="color:rgb(14, 181, 236);">Health Procedures Tracking
+                            </h5>
+                            <p class="mb-4">Dairy Delights' comprehensive Health Procedures Tracking module ensures the well-being of your cattle by meticulously recording all essential health-related activities.
+                            </p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100 service1">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-6.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3" style="color:rgb(14, 181, 236);">Production Monitoring
+                            </h5>
+                            <p class="mb-4">The Production Monitoring module in Dairy Delights empowers you to track and analyze your milk yield, enabling informed decisions to maximize productivity.
+                            </p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5" id="Team">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center px-3" style="color:rgb(12, 173, 226)">Our Team</p>
+                <h1 class="mb-5" style="color:rgb(12, 173, 226)">Experienced Team Members</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded p-4">
+                        <h5 style="color:black;">Brian Irunguh</h5>
+                        <p style="color:rgb(10, 147, 192);">Project Leader & Backend Developer</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.facebook.com" target="_target"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://x.com/archaicsociable?t=B3Jk0THySBxnV8t_-tjw5w&s=08 " target="_target"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.instagram.com/a.ncesto.r?igsh=ZGFoNHB6cmE5bXAw" target="_target"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded p-4">
+                        
+                        
+                        <h5 style="color:black;">Eliud Marierie</h5>
+                        <p style="color:rgb(10, 147, 192);">Backend Developer & Database Administrator</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" target="_blank" href="https://www.facebook.com/profile.php?id=100089833212239 "><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" target="_blank" href="https://x.com/Mastereli_6sa"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" target="_blank" target="_blank" href="https://www.instagram.com/mastereli_6sa?igsh=YzljYTk1ODg3Zg== "><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        
+                        
+                        <h5 style="color:black;">Kelvin Mwenda</h5>
+                        <p style="color:rgb(10, 147, 192);">Lead Frontend Developer & UX/UI Engineer</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" target="_blank" href="https://www.facebook.com/profile.php?id=100084121656741"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" target="_blank" href="https://x.com/jinx_vinke/"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.instagram.com/jinx_mwenda/" target="_target"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        
+                        <h5 style="color:black;">Sharon Nyaboke</h5>
+                        <p style="color:rgb(10, 147, 192);">Frontend Developer</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.facebook.com/profile.php?id=100089075822007&mibextid=ZbWKwL " target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.instagram.com/just.nyaboke.?igsh=b2VpenFtZHowaGEz" target="_target"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        
+                        <h5 style="color:black;">Kitavi Douglas Kimani</h5>
+                        <p style="color:rgb(10, 147, 192);">Quality Assurance(QA) Tester</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.facebook.com" target="_target"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://x.com/home" target="_target"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.instagram.com" target="_target"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        
+                        <h5 style="color:black;">Felister Njeri</h5>
+                        <p style="color:rgb(10, 147, 192);">Subject matter Expert</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.facebook.com" target="_target"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://x.com/home" target="_target"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.instagram.com" target="_target"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        
+                        <h5 style="color:black;">Duncan Gitau</h5>
+                        <p style="color:rgb(10, 147, 192);">Business Analyst</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.facebook.com" target="_target"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://x.com/home" target="_target"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.instagram.com" target="_target"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s" data-parallax="scroll" data-image-src="img/b1.jpg">
+        
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4" style="color:rgb(31, 181, 231)">Our Office</h5>
+                    <p class="mb-2" style="color:rgb(255, 255, 255)"><i class="fa fa-map-marker-alt me-3" style="color:rgb(38, 175, 221)"></i>P.O. BOX 6200, NAIROBI, KENYA</p>
+                    <p class="mb-2" style="color:rgb(255, 255, 255)"><i class="fa fa-phone-alt me-3" style="color:rgb(39, 188, 238)"></i>Tel: 067-5870001-5,<br>Brian Irunguh: 0705375277,<br>Kelvin Mwenda: 0746917394,<br>Eliud Marirerie: 0717682226,<br>Felister: 0713920829,<br>Douglas Kimani: 0720630380,<br>Sharon Nyaboke: 0726780546,<br>Duncan Kitavi: 0710285209</p>
+                    <p class="mb-2" style="color:rgb(255, 255, 255)"><i class="fa fa-envelope me-3" style="color:rgb(39, 188, 238)"></i>Email: registrar@aa.jkuat.ac.ke</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square rounded-circle me-2" href="" style="background-color:#27bcee; color:white;" ><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href="" style="background-color:rgb(39, 188, 238);color:white;"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href="" style="background-color:rgb(39, 188, 238);color:white;"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href="" style="background-color:#27bcee; color:white;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4" style="color:rgb(39, 188, 238)">Quick Links</h5>
+                    <a class="btn btn-link" style="color:rgb(255, 255, 255)" href="index.html">Home</a>
+                    <a class="btn btn-link" style="color:rgb(255, 255, 255)" href="#About">About Us</a>
+                    <a class="btn btn-link" style="color:rgb(255, 255, 255)" href="#Services">Our Services</a>
+                    <a class="btn btn-link" style="color:rgb(255, 255, 255)" href="#Team">Our Team</a>
+                    
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4" style="color:rgb(39, 188, 238)">Newsletter</h5>
+                    <p style="color:rgb(255, 255, 255)">Secure an opportunity with us by creating an account to get quality dairy farming experience.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        
+                            <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" style="color:rgb(255, 255, 255);background-color:rgb(30, 176, 224)">SignUp</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid text-body copyright py-4" style="background-color:rgb(10, 147, 192);color:white;">
+        <div class="container">
+            <div class="row" style="color:white">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#" style="color:white">Dairy Harbor Management App</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <a class="fw-semi-bold" href="#" style="color:white">Jomo Kenyatta University of Agriculture and Technology</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end" style="color:rgb(75, 64, 64);font-weight:bold;">
+                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com" style="color:rgb(65, 58, 58); font-weight:bold;">Chocs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top" style="background-color:rgb(3, 38, 49)"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
