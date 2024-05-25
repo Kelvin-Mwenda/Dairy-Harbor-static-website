@@ -60,20 +60,7 @@
             height:200px;
             width:200px;
         }
-        .head{
-            display: flex;
-            flex-direction: row;
-            column-gap: 20px;
-            align-items: center;
-            z-index: 1000;
-            background-color: white;
-            height:94px;
-            right:0;
-            left:0;
-            top:0;
-        }
         .logo{
-            flex:1;
             height:100%;
             width:100%;
             object-fit: cover;
@@ -83,24 +70,22 @@
             display:flex;
             flex-direction:row;
             justify-content: space-between;
-            align-items:center;
+            align-items:top;
             column-gap: 20px;
             z-index:100;
         }
         .image2{
             z-index: 10000;
-            height:150px;
-            width:150px;
+            position:fixed;
+            display:inline-block;
+            height:200px;
+            width:200px;
             overflow:hidden;
             background-color: white;
             border-bottom:12px solid rgb(22, 178, 230);
             border-radius: 200px;
-            margin-left:10px;
         }
-        .nav{
-            flex:1;
-            margin-left:350px;
-        }
+        
         .img1{
             height:150px;
             width:150px;
@@ -141,41 +126,35 @@
             filter: brightness(50%);
             z-index: -1; /* Ensure the overlay is behind the content */
         }
-       
     </style>
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <div class="head sticky-top col-md-6">
         <div class="image2">
             <img src="img/logo.png" class="logo">
-        </div>
-        <div class="logo-text">
-                <h2 style="color:rgb(0, 183, 255)">Dairy Harbor</h2>
-        </div>
-        <div class="nav">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light px-4 px-lg-5">
-                <a href="index.html" class="navbar-brand d-flex align-items-center">
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse" style="color:rgb(23, 180, 233);">
-                    <div class="navbar-nav ms-auto p-4 p-lg-0">
-                        <a href="index.html" class="nav-item nav-link active" style="color:rgb(23, 180, 233);">Home</a>
-                        <a href="#About" class="nav-item nav-link" style="color:rgb(23, 180, 233);">About</a>
-                        <a href="#Services" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Services</a>
-                        <a href="#Team" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Our Team</a>
-                        
-                        </div>
+        </div>        
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+            </a>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse" style="color:rgb(23, 180, 233);">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active" style="color:rgb(23, 180, 233);">Home</a>
+                    <a href="#About" class="nav-item nav-link" style="color:rgb(23, 180, 233);">About</a>
+                    <a href="#Services" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Services</a>
+                    <a href="#Team" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Our Team</a>
+                    
                     </div>
-                    <div class="border-start ps-4 d-none d-lg-block">
-                        
-                    </div>
-            </nav>
-        </div>
-    </div> 
+                </div>
+                <div class="border-start ps-4 d-none d-lg-block">
+                    
+                </div>
+        </nav>
+
+        
     <!-- Navbar End -->
 
 
@@ -715,11 +694,8 @@ The application can monitor and analyze cow health and diet, providing data-driv
         <div class="container">
             <div class="row" style="color:white">
                 
-                <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0" style="text-align:center;">
-                    <a class="fw-semi-bold" href="#" style="color:white;">&copy; 2024 Dairy Harbor Management Website</a> &#124; <a class="fw-semi-bold" href="#" style="color:white">All rights reserved</a>
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <a class="fw-semi-bold" href="#" style="color:white">Jomo Kenyatta University of Agriculture and Technology</a> 
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <a class="fw-semi-bold" href="#" style="color:white">Jomo Kenyatta University of Agriculture and Technology</a> &#124; <a class="fw-semi-bold" href="#" style="color:white">All rights reserved</a>
                 </div>
                 <div class="col-md-6 text-center text-md-end" style="color:rgb(201, 184, 184);font-weight:bold;">
                     Designed By <a class="fw-semi-bold" href="https://htmlcodex.com" style="color:rgb(212, 197, 197); font-weight:bold;">Chocs</a>
