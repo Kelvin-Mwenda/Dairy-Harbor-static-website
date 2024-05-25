@@ -60,7 +60,20 @@
             height:200px;
             width:200px;
         }
+        .head{
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            align-items: center;
+            z-index: 1000;
+            background-color: white;
+            height:94px;
+            right:0;
+            left:0;
+            top:0;
+        }
         .logo{
+            flex:1;
             height:100%;
             width:100%;
             object-fit: cover;
@@ -70,22 +83,24 @@
             display:flex;
             flex-direction:row;
             justify-content: space-between;
-            align-items:top;
+            align-items:center;
             column-gap: 20px;
             z-index:100;
         }
-        .title{
+        .image2{
             z-index: 10000;
-            position:fixed;
-            display:inline-block;
+            height:150px;
+            width:150px;
             overflow:hidden;
             background-color: white;
             border-bottom:12px solid rgb(22, 178, 230);
-            border-radius: 20px;
-            left:20px;
-            top:18px;
+            border-radius: 200px;
+            margin-left:10px;
         }
-        
+        .nav{
+            flex:1;
+            margin-left:350px;
+        }
         .img1{
             height:150px;
             width:150px;
@@ -126,33 +141,41 @@
             filter: brightness(50%);
             z-index: -1; /* Ensure the overlay is behind the content */
         }
+       
     </style>
 </head>
 
 <body>
     <!-- Navbar Start -->
-        <div class="title">
-            <h1 style="color:rgb(20, 185, 240);">Dairy Harbour</h1>
-        </div>        
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
-            </a>
-            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse" style="color:rgb(23, 180, 233);">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active" style="color:rgb(23, 180, 233);">Home</a>
-                    <a href="#About" class="nav-item nav-link" style="color:rgb(23, 180, 233);">About</a>
-                    <a href="#Services" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Services</a>
-                    <a href="#Team" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Our Team</a>
-                    
+    <div class="head sticky-top">
+        <div class="image2">
+            <img src="img/logo.png" class="logo">
+        </div>
+        <div class="logo-text">
+                <h2 style="color:rgb(0, 183, 255)">Dairy Harbor</h2>
+        </div>
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light px-4 px-lg-5">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse" style="color:rgb(23, 180, 233);">
+                    <div class="navbar-nav ms-auto p-4 p-lg-0">
+                        <a href="index.html" class="nav-item nav-link active" style="color:rgb(23, 180, 233);">Home</a>
+                        <a href="#About" class="nav-item nav-link" style="color:rgb(23, 180, 233);">About</a>
+                        <a href="#Services" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Services</a>
+                        <a href="#Team" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Our Team</a>
+                        
+                        </div>
                     </div>
-                </div>
-                <div class="border-start ps-4 d-none d-lg-block">
-                    
-                </div>
-        </nav>        
+                    <div class="border-start ps-4 d-none d-lg-block">
+                        
+                    </div>
+            </nav>
+        </div>
+    </div> 
     <!-- Navbar End -->
 
 
@@ -171,7 +194,7 @@
                             <div class="row justify-content-start">
                                 <div class="col-lg-8 text-start">
                                     
-                                    <h6 class="display-1 text-white mb-4 animated slideInRight h3">Revolutionizing Dairy Management for a Sustainable Future.</h6>
+                                    <h3 class="display-1 text-white mb-5 animated slideInRight h3">Revolutionizing Dairy Management for a Sustainable Future.</h3>
                                     
                                 </div>
                             </div>
@@ -283,12 +306,11 @@
                     <p class="mb-4" style="color:rgb(0,0,0);">Our goal is to develop a dairy farm management app that offers a user-friendly interface and robust functionality, enabling farmers to efficiently oversee their operations, enhance productivity, and optimize profitability through streamlined livestock management, accurate production tracking, and sales monitoring.
 
                     </p>
-                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3 text-info"></i>Streamlined Dairy Farm Management
+                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3"></i>Streamlined Dairy Farm Management
                     </p>
-                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3 text-info"></i>Herd Health Optimization
-                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3 text-info"></i>Herd Health Optimization
+                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3"></i>Herd Health Optimization
                     </p>
-                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3 text-info"></i>Data-Driven Decision Making
+                    <p style="color:rgb(0,0,0);"><i class="fa fa-check text-primary me-3"></i>Data-Driven Decision Making
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -334,35 +356,35 @@
                         <div class="col-sm-8">
                             <h2 class="mb-3" style="color:white;">Problems
                             </h2>
-                                <p><i class="fa fa-check me-3 text-info"></i>
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Inconsistent Milk Production:</span> 
                                      Variations in milk yield due to poor tracking of cow health and diet.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check  me-3 text-info"></i>
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check  me-3"></i>
                                     <span style="text-weight:bold; color:white;">Disease Outbreaks:</span> Difficulty in early detection and prevention of diseases.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i>
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Labor Management:</span> Inefficient labor allocation and management.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i>
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Record Keeping:</span>  Manual record-keeping is prone to errors and time-consuming.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i>
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Feed Management:</span> Inaccurate feed formulation and distribution.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i>
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Breeding Management:</span> Poor tracking of breeding cycles and genetic records.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i>
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Financial Management:</span>  Inefficient financial tracking and management.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i>
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Regulatory Compliance:</span> Difficulty in maintaining and accessing compliance records.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i>
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Resource Allocation: </span>Inefficient use of resources like water, feed, and medications.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i> <span style="text-weight:bold; color:white;">Market Connectivity:</span> Limited access to markets and customers.
+                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i> <span style="text-weight:bold; color:white;">Market Connectivity:</span> Limited access to markets and customers.
                                 </p>
                             
                         </div>
@@ -376,38 +398,38 @@
                         <div class="col-sm-8">
                             <h2 class="mb-3" style="color:white;">Solutions
                             </h2>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i>
+                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                 <span style="text-weight:bold; color:white;">Consistent Milk Production:</span>
                                 
 
 The application can monitor and analyze cow health and diet, providing data-driven recommendations to optimize milk yield.
 
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check  me-3 text-info"></i>
+                            <p style="color:rgb(0,0,0);"><i class="fa fa-check  me-3"></i>
                                 <span style="text-weight:bold; color:white;">Disease Outbreaks:</span>
 
                                 Early detection through real-time health monitoring and alerts for abnormal conditions can prevent disease spread.
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i>
+                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
                                 <span style="text-weight:bold; color:white;">Labor Management:</span>
 
                                 Automate task scheduling and track labor efficiency to ensure optimal use of human resources.
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i><span style="text-weight:bold; color:white;">Record Keeping:</span>
+                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Record Keeping:</span>
 
                                 Digital record-keeping ensures accuracy and easy access to historical data for analysis and decision-making.
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i><span style="text-weight:bold; color:white;">Feed Management:</span>
+                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Feed Management:</span>
                                 
 
                                 Optimize feed formulation and distribution using data on cow health, milk production, and nutritional requirements.
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i><span style="text-weight:bold; color:white;">Breeding Management:</span>
+                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Breeding Management:</span>
 
                                 Track breeding cycles, genetic information, and schedule optimal breeding times to improve herd genetics and productivity.
                                 
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3 text-info"></i><span style="text-weight:bold; color:white;">Financial Management:</span>
+                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Financial Management:</span>
 
                                 Integrate financial tracking to monitor expenses, revenue, and profitability, providing detailed financial reports.
                             </p>
@@ -689,14 +711,15 @@ The application can monitor and analyze cow health and diet, providing data-driv
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid text-body copyright py-4" style="background-color:rgb(3, 62, 82);color:white;">
+    <div class="container-fluid text-body copyright py-4" style="background-color:rgb(7, 100, 131);color:white;">
         <div class="container">
-            <div class="row" style="color:rgb(254, 255, 255)">
-                <div class="col-md-6 col-lg-12 col-gp-6 text-center text-md-center mb-3 mb-md-0">
+            <div class="row" style="color:white">
+                
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     <a class="fw-semi-bold" href="#" style="color:white">Jomo Kenyatta University of Agriculture and Technology</a> &#124; <a class="fw-semi-bold" href="#" style="color:white">All rights reserved</a>
                 </div>
-                <div class="col-md-6 text-center text-md-end" style="font-weight:bold; display:block;">
-                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com" style="font-weight:bold;color:white;">Chocs</a>
+                <div class="col-md-6 text-center text-md-end" style="color:rgb(201, 184, 184);font-weight:bold;">
+                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com" style="color:rgb(212, 197, 197); font-weight:bold;">Chocs</a>
                 </div>
             </div>
         </div>
