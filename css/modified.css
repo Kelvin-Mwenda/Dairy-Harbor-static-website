@@ -36,7 +36,7 @@
 .image2{
     z-index: 1050;
     position:fixed;
-    height:70px;
+    height:64px;
     left:20px;
     display:flex;
     column-gap: 10px;
