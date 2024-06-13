@@ -1,0 +1,64 @@
+.pageHead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    padding-right: 20px;
+    height: 90px;
+}
+
+.headTitleLogo{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2px;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width:auto;
+    margin-left: 10px;
+}
+.logo-1-container{
+    padding: 6px;
+    margin-right: 10px;
+}
+.logo-1-icon{
+    margin-bottom: -50px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid rgb(0, 162, 255);;
+    border-bottom: 10px solid rgb(0, 162, 255);
+    border-radius: 100px;
+}
+.dairy-harbor-container{
+    margin-left: 6px;
+    white-space: nowrap;
+}
+.dairy-harbor{
+    color:rgb(0, 162, 255);
+}
+
+.navbar-item
+{
+    height:70px;
+    margin-left: 100px;
+}
+.navBar{
+    background-color: white;
+    font-size: 18px;
+    columns: rgb(0, 162, 255);
+}
+.nav-container{
+    color: rgb(3,183,194);
+    font-weight: bold;
+    background-color: white;
+    border-bottom: 2px solid rgb(0, 162, 255);
+}
+
+
+
+

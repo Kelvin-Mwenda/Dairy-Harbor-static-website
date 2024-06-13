@@ -1,5 +1,15 @@
-.h3{
-    margin-top:80px;
+.image-container{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(153, 160, 161);
+    align-items: center;
+    padding: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.p{
+    width: 100px;
+    font-size: 50px;
 }
 .image{
     height: 500px;
@@ -81,7 +91,6 @@ p{
 }
 .service1:hover{
     color:white;
-    background-color:rgb(65, 64, 64);
 }
 .img3{
     filter:brightness(40%);
@@ -96,4 +105,40 @@ p{
     background-image: url('img/b1.jpg');
     filter: brightness(50%);
     z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+.team-banner{
+    transition: all 0.15s ease-in-out;
+}
+.team-banner:hover{
+    box-shadow: 5px 10px 6px rgba(0, 0, 0, .15);
+    transform: scale(1.05);
+}
+
+.service1{
+    box-shadow: 4px 4px 4px rgb(0,0,0, 0.25);
+    transition:all 0.15s ease-in-out;
+}
+.service1:hover{
+    color:white;
+    box-shadow: 5px 10px 6px rgba(0, 0, 0, .15);
+    transform: scale(1.05);
+}
+.service-Item{
+    width: 140px;
+    height: 140px;
+    padding: 15px;
+    margin-top: -70px;
+    margin-bottom: 40px;
+    background: #8b8787;
+    border: 2px solid rgb(0, 183, 255);
+    border-radius: 140px;
+    overflow: hidden;
+    box-shadow: 4px 4px 6px rgb(0,0,0, 0.15);
+}
+.service-image{
+    border: none;
+}
+.img3{
+    filter:brightness(40%);
 }

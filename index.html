@@ -33,6 +33,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/modified.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
 
     <style>
         
@@ -42,52 +43,48 @@
 
 <body>
     <!-- Navbar Start -->
-        <div class="image2">
-            <div class="logo-container d-none d-lg-block d-xl-block d-xxl-block">
-                <img src="img/logo.png" class="logo">
+    <nav class="nav-container shadow-lg navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 text-center">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <div class="logo-1-container">
+                <img class="logo-1-icon d-none d-md-none d-lg-block d-xl-block" alt="" src="img/logo.png" />
             </div>
-           <div class="text">
-            <h1 style="color:rgb(0, 183, 255); margin-top:20px;">Dairy Harbor</h1>
-           </div>
-        </div>        
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
-            </a>
-            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse" style="color:rgb(23, 180, 233);">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active" style="color:rgb(23, 180, 233);">Home</a>
-                    <a href="#About" class="nav-item nav-link" style="color:rgb(23, 180, 233);">About</a>
-                    <a href="#Services" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Services</a>
-                    <a href="#Team" class="nav-item nav-link" style="color:rgb(23, 180, 233);">Our Team</a>
-                    
-                    </div>
+            <h1 class="m-0" style="color:rgb(23, 180, 233);">Dairy Harbor</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" style="color:rgb(23, 180, 233);" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="#Home" class="nav-item nav-link active" style="color:rgb(23, 180, 233);">HOME</a>
+                <a href="#About" class="nav-item nav-link" style="color:rgb(23, 180, 233);">ABOUT</a>
+                <a href="#Services" class="nav-item nav-link" style="color:rgb(23, 180, 233);">SERVICES</a>
+                <a href="#Team" class="nav-item nav-link" style="color:rgb(23, 180, 233);">TEAM</a>
+                <a href="#Contacts" class="nav-item nav-link" style="color:rgb(23, 180, 233);">CONTACTS</a>
                 </div>
-                <div class="border-start ps-4 d-none d-lg-block">
-                    
-                </div>
-        </nav>   
+            </div>
+            <div class="border-start ps-4 d-none d-lg-block">
+                <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </nav>   
     <!-- Navbar End -->
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
+    <div class="container-fluid px-0 mb-5 h3">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  </div>
+                </div>
                 <div class="carousel-item active image">
                     <img class="w-100 img" style="filter:brightness(40%)" src="img/carousel-11.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-8 text-start">
-                                    
-                                    <h6 class="display-1 text-white mb-5 animated slideInRight h3">Revolutionizing Dairy Management for a Sustainable Future.</h6>
+                                    <h1 class="text-white slideInRight p">Revolutionizing Dairy Management for a Sustainable Future.</h1>
                                     
                                 </div>
                             </div>
@@ -173,7 +170,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="image1 mb-4">
-                                <img class="img-fluid mb-4 img" src="img/product.jpg" alt="">
+                                <img class="img-fluid mb-4 img" src="img/product1.jpg" alt="">
                             </div>
 
                                 <h5 class="mb-3" style="color:rgb(20, 185, 240);">
@@ -238,7 +235,7 @@
 
 
     <!-- Banner Start -->
-    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" style="background-color:rgb(8, 90, 117);">
+    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" style="background-color:rgb(0, 0, 0);">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
@@ -249,35 +246,35 @@
                         <div class="col-sm-8">
                             <h2 class="mb-3" style="color:white;">Problems
                             </h2>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Inconsistent Milk Production:</span> 
                                      Variations in milk yield due to poor tracking of cow health and diet.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check  me-3"></i>
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check  me-3"></i>
                                     <span style="text-weight:bold; color:white;">Disease Outbreaks:</span> Difficulty in early detection and prevention of diseases.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Labor Management:</span> Inefficient labor allocation and management.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Record Keeping:</span>  Manual record-keeping is prone to errors and time-consuming.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Feed Management:</span> Inaccurate feed formulation and distribution.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Breeding Management:</span> Poor tracking of breeding cycles and genetic records.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Financial Management:</span>  Inefficient financial tracking and management.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Regulatory Compliance:</span> Difficulty in maintaining and accessing compliance records.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                     <span style="text-weight:bold; color:white;">Resource Allocation: </span>Inefficient use of resources like water, feed, and medications.
                                 </p>
-                                <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i> <span style="text-weight:bold; color:white;">Market Connectivity:</span> Limited access to markets and customers.
+                                <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i> <span style="text-weight:bold; color:white;">Market Connectivity:</span> Limited access to markets and customers.
                                 </p>
                             
                         </div>
@@ -291,42 +288,41 @@
                         <div class="col-sm-8">
                             <h2 class="mb-3" style="color:white;">Solutions
                             </h2>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                            <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                 <span style="text-weight:bold; color:white;">Consistent Milk Production:</span>
                                 
 
 The application can monitor and analyze cow health and diet, providing data-driven recommendations to optimize milk yield.
 
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check  me-3"></i>
+                            <p style="color:rgb(14, 181, 236);"><i class="fa fa-check  me-3"></i>
                                 <span style="text-weight:bold; color:white;">Disease Outbreaks:</span>
 
                                 Early detection through real-time health monitoring and alerts for abnormal conditions can prevent disease spread.
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i>
+                            <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i>
                                 <span style="text-weight:bold; color:white;">Labor Management:</span>
 
                                 Automate task scheduling and track labor efficiency to ensure optimal use of human resources.
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Record Keeping:</span>
+                            <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Record Keeping:</span>
 
                                 Digital record-keeping ensures accuracy and easy access to historical data for analysis and decision-making.
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Feed Management:</span>
+                            <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Feed Management:</span>
                                 
 
                                 Optimize feed formulation and distribution using data on cow health, milk production, and nutritional requirements.
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Breeding Management:</span>
+                            <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Breeding Management:</span>
 
                                 Track breeding cycles, genetic information, and schedule optimal breeding times to improve herd genetics and productivity.
                                 
                             </p>
-                            <p style="color:rgb(0,0,0);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Financial Management:</span>
+                            <p style="color:rgb(14, 181, 236);"><i class="fa fa-check me-3"></i><span style="text-weight:bold; color:white;">Financial Management:</span>
 
                                 Integrate financial tracking to monitor expenses, revenue, and profitability, providing detailed financial reports.
                             </p>
-                           
 
                         </div>
                     </div>
@@ -344,6 +340,7 @@ The application can monitor and analyze cow health and diet, providing data-driv
                 <p class="section-title bg-white text-center px-3" style="color:rgb(14, 181, 236);">Our Services</p>
                 <h1 class="mb-5" style="color:rgb(14, 181, 236);">Services That We Offer For Farmer</h1>
             </div>
+
             <div class="row gy-5 gx-4">
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex h-100 service1">
@@ -362,13 +359,14 @@ The application can monitor and analyze cow health and diet, providing data-driv
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex h-100 service1">
                         <div class="service-img">
                             <img class="img-fluid" src="img/service-2.jpg" alt="">
                         </div>
                         <div class="service-text p-5 pt-0">
-                            <div class="service-icon">
+                            <div class="service-icon rounded-circle">
                                 <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
                             </div>
                             <h5 class="mb-3" style="color:rgb(14, 181, 236);">Milk Distribution and Sales
@@ -380,6 +378,7 @@ The application can monitor and analyze cow health and diet, providing data-driv
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex h-100 service1">
                         <div class="service-img">
@@ -398,6 +397,7 @@ The application can monitor and analyze cow health and diet, providing data-driv
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex h-100 service1">
                         <div class="service-img">
@@ -416,10 +416,11 @@ The application can monitor and analyze cow health and diet, providing data-driv
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100 service1">
                         <div class="service-img">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                            <img class="img-fluid " src="img/service-5.jpg" alt="">
                         </div>
                         <div class="service-text p-5 pt-0">
                             <div class="service-icon">
@@ -433,6 +434,7 @@ The application can monitor and analyze cow health and diet, providing data-driv
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex h-100 service1">
                         <div class="service-img">
@@ -463,9 +465,13 @@ The application can monitor and analyze cow health and diet, providing data-driv
                 <p class="section-title bg-white text-center px-3" style="color:rgb(12, 173, 226)">Our Team</p>
                 <h1 class="mb-5" style="color:rgb(12, 173, 226)">Experienced Team Members</h1>
             </div>
+
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+
+                <!--Brian-->
+                <div class="col-lg-4 col-md-6 wow fadeInUp team-banner" data-wow-delay="0.1s">
                     <div class="team-item rounded p-4">
+                        <img src="img/Brian.jpeg" class="image-container rounded-circle" alt="...">
                         <h5 style="color:black;">Brian Irunguh</h5>
                         <p style="color:rgb(10, 147, 192);">Project Leader & Backend Developer</p>
                         <div class="d-flex justify-content-center">
@@ -475,10 +481,11 @@ The application can monitor and analyze cow health and diet, providing data-driv
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+
+                <!--Eliud-->
+                <div class="col-lg-4 col-md-6 wow fadeInUp team-banner" data-wow-delay="0.3s">
                     <div class="team-item rounded p-4">
-                        
-                        
+                        <img src="img/Eliud1.jpg" class="image-container rounded-circle" alt="...">
                         <h5 style="color:black;">Eliud Marierie</h5>
                         <p style="color:rgb(10, 147, 192);">Backend Developer & Database Administrator</p>
                         <div class="d-flex justify-content-center">
@@ -488,10 +495,11 @@ The application can monitor and analyze cow health and diet, providing data-driv
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+
+                <!--Kelvin-->
+                <div class="col-lg-4 col-md-6 wow fadeInUp team-banner" data-wow-delay="0.5s">
                     <div class="team-item rounded p-4">
-                        
-                        
+                        <img src="img/Kelvin.jpg" class="image-container rounded-circle" alt="...">
                         <h5 style="color:black;">Kelvin Mwenda</h5>
                         <p style="color:rgb(10, 147, 192);">Lead Frontend Developer & UX/UI Engineer</p>
                         <div class="d-flex justify-content-center">
@@ -502,9 +510,10 @@ The application can monitor and analyze cow health and diet, providing data-driv
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <!--Sharon-->
+                <div class="col-lg-4 col-md-6 wow fadeInUp team-banner" data-wow-delay="0.5s">
                     <div class="team-item rounded p-4">
-                        
+                        <img src="img/Sharon.jpg" class="image-container rounded-circle" alt="...">
                         <h5 style="color:black;">Sharon Nyaboke</h5>
                         <p style="color:rgb(10, 147, 192);">Frontend Developer</p>
                         <div class="d-flex justify-content-center">
@@ -515,9 +524,10 @@ The application can monitor and analyze cow health and diet, providing data-driv
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <!--Kitavi-->
+                <div class="col-lg-4 col-md-6 wow fadeInUp team-banner" data-wow-delay="0.5s">
                     <div class="team-item rounded p-4">
-                        
+                        <img src="img/Kitavi.jpg" class="image-container rounded-circle" alt="...">
                         <h5 style="color:black;">Kitavi Douglas Kimani</h5>
                         <p style="color:rgb(10, 147, 192);">Quality Assurance(QA) Tester</p>
                         <div class="d-flex justify-content-center">
@@ -528,9 +538,10 @@ The application can monitor and analyze cow health and diet, providing data-driv
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <!--Felister-->
+                <div class="col-lg-4 col-md-6 wow fadeInUp team-banner" data-wow-delay="0.5s">
                     <div class="team-item rounded p-4">
-                        
+                        <img src="img/Felister.jpg" class="image-container rounded-circle" alt="...">
                         <h5 style="color:black;">Felister Njeri</h5>
                         <p style="color:rgb(10, 147, 192);">Subject matter Expert</p>
                         <div class="d-flex justify-content-center">
@@ -541,11 +552,40 @@ The application can monitor and analyze cow health and diet, providing data-driv
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <!--Duncan-->
+                <div class="col-lg-4 col-md-6 wow fadeInUp team-banner" data-wow-delay="0.5s">
                     <div class="team-item rounded p-4">
-                        
-                        <h5 style="color:black;">Duncan Gitau</h5>
+                        <img src="img/Dancun.jpg" class="image-container rounded-circle" alt="...">
+                        <h5 style="color:black;">Dancun Gitau</h5>
                         <p style="color:rgb(10, 147, 192);">Business Analyst</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.facebook.com" target="_target"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://x.com/home" target="_target"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.instagram.com" target="_target"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Duncan-->
+                <div class="col-lg-4 col-md-6 wow fadeInUp team-banner" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        <img src="img/Nderu.png" class="image-container rounded-circle" alt="...">
+                        <h5 style="color:black;">Dr. Lawrence Nderu</h5>
+                        <p style="color:rgb(10, 147, 192);">Chairman & Project Managert</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.facebook.com" target="_target"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://x.com/home" target="_target"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.instagram.com" target="_target"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--William-->
+                <div class="col-lg-4 col-md-6 wow fadeInUp team-banner" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        <img src="img/William.jpeg" class="image-container rounded-circle" alt="...">
+                        <h5 style="color:black;">Dr. William</h5>
+                        <p style="color:rgb(10, 147, 192);">JHUB Official & Lecturer</p>
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://www.facebook.com" target="_target"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1 link" href="https://x.com/home" target="_target"><i class="fab fa-twitter"></i></a>
@@ -587,14 +627,28 @@ The application can monitor and analyze cow health and diet, providing data-driv
                     
                 </div>
                 
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4" style="color:rgb(39, 188, 238)">Newsletter</h5>
-                    <p style="color:rgb(255, 255, 255)">Secure an opportunity with us by creating an account to get quality dairy farming experience.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                <div class="col-lg-3 col-md-3">
+                    <h5 class="mb-4" style="color:rgb(39, 188, 238)">Our Partners</h5>
+
+                    <div class="mb-3">
+                        <a href="https://jhubafrica.com/" target="_blank"><img style="background:white;" src="img/jhub.png" class="w-20 h-20 scale-150 img-fluid rounded jHub-logo" style="border-radius:100px;"></a>
+                    </div>
+
+                    <div class="mt-3">
+                        <a href="https://www.jkuat.ac.ke/" target="_blank"><img style="background:white; border-radius:100px; width :250px;" src="img/jkuatLogo.png" class="w-20 h-20 scale-150 img-fluid rounded jHub-logo" alt="jHub-Logo"></a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <a href="https://jhubafrica.com/" target="_blank"><img style="background:white;" src="img/jhub.png" class="w-20 h-20 scale-150 img-fluid rounded jHub-logo" style="border-radius:100px;"></a>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square rounded-circle me-2" href="" style="background-color:#27bcee; color:white;" ><i class="fab fa-twitter"></i></a>
                         
-                            <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2" style="color:rgb(255, 255, 255);background-color:rgb(30, 176, 224)">SignUp</button>
-                        
+                        <a class="btn btn-square rounded-circle me-2" href="https://jhubafrica.com/about" style="background-color:#27bcee; color:white;"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square rounded-circle me-2" href="https://www.tiktok.com/@jhubafrica" style="background-color:#27bcee; color:white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                        </svg></a>
                     </div>
                 </div>
             </div>
@@ -609,17 +663,12 @@ The application can monitor and analyze cow health and diet, providing data-driv
             <div class="row" style="color:white">
                 
                 <div class="col-md-12 text-center text-md-center mb-3 mb-md-0">
-                    <a class="fw-semi-bold" href="#" style="color:white">&copy; Dairy Harbor Management Website</a> &#124; <a class="fw-semi-bold" href="#" style="color:white">All rights reserved</a>
-                </div>
-
-                <div class="col-md-12 text-center text-md-center mb-3 mb-md-0">
-                    <a class="fw-semi-bold" href="#" style="color:white">Jomo Kenyatta University of Agriculture and Technology</a> 
+                    <a class="fw-semi-bold" href="#" style="color:white">&copy; All rights reserved</a> &#124; <a class="fw-semi-bold" href="#" style="color:white">Terms of service</a>
                 </div>
 
                 <div class="col-md-6 text-center text-md-end" style="color:rgb(201, 184, 184);font-weight:bold;">
                     Designed By <a class="fw-semi-bold" href="https://htmlcodex.com" style="color:rgb(212, 197, 197); font-weight:bold;">Chocs</a>
                 </div>
-
             </div>
         </div>
     </div>
