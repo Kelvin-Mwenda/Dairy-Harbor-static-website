@@ -1,7 +1,18 @@
 .image-container{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     border: 2px solid rgb(153, 160, 161);
+    border-radius: 12px;
+    align-items: center;
+    padding: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.logo-container{
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(153, 160, 161);
+    border-radius: 12px;
     align-items: center;
     padding: auto;
     object-fit: cover;
