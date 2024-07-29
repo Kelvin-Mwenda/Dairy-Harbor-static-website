@@ -1,0 +1,1 @@
+Dairy Harbor is a comprehensive dairy farm management app designed to streamline dairy farm operations and maximize productivity. With innovative features that cover every aspect of dairy farming, Dairy Delight empowers you to efficiently manage your herd, optimize breeding, and monitor production and sales
