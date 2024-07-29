@@ -159,3 +159,8 @@ p{
 .img3{
     filter:brightness(40%);
 }
+
+
+.nav-button{
+    color:rgb(23, 180, 233);
+}
